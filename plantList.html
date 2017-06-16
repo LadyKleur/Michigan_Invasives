@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="final.css">
+    <link href="JS/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="JS/jquery-ui.min.css">
+	<script src="JS/external/jquery/jquery.js"></script>
+    <script src="JS/jquery-ui.min.js"></script>
+	<meta charset="utf-8">
+	<title>Michigan Invasives</title>
+    <script>
+      $(function() {
+		$( "#accordion" ).accordion({
+		  heightStyle: "content"
+		});
+	  });
+    </script>
+</head>
+<body>
+	<div id="topWrapper">
+        <div id="nav">
+        	<ul>       	
+            	<li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="laws.html">Laws</a></li>
+                <li><a href="management.html">Management</a></li>
+                <li><a class="current" href="plantList.html">Plant List</a></li>
+                <li><a href="effects.html">Effects</a></li>
+                <li><a href="index.html">Home</a></li>
+                <a href="index.html"><img src="Assets/logo.png" alt="Michigan Invasives logo" width="200" height="97"></a>
+            </ul>
+        </div> <!-- end nav -->
+        <div class="clear"></div>
+        <div id="banner"></div>
+    </div> <!-- end topWrapper -->
+	<div id="mainWrapper">
+        <div id="contentWrapper">
+        	<h1>List of Michigan's Invasive Plants</h1>
+        	<table id="tableTitle">
+            	<tr>
+                    <td><h2>Common Name</h2></td>
+                    <td><h2>Scientific Name</h2></td>
+                </tr>
+            </table>
+            <div id="accordion">
+                <h3>Trees</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Black Alder</td>
+                            <td><em>Alnus glutinosa</em></td>
+                        </tr>
+                        <tr>
+                            <td>Black Locust</td>
+                            <td><em>Robinia pseudoacacia</em></td>
+                        </tr>
+                        <tr>
+                            <td>Norway Maple</td>
+                            <td><em>Acer platanoides</em></td>
+                        </tr>
+                        <tr>
+                            <td>Russian Olive</td>
+                            <td><em>Elaeagnus angustifolia</em></td>
+                        </tr>
+                        <tr>
+                            <td>Tree of Heaven</td>
+                            <td><em>Ailanthus altissima</em></td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Shrubs</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Autumn Olive</td>
+                            <td><em>Elaeagnus umbellata</em></td>
+                        </tr>
+                        <tr>
+                            <td>Black Jetbead</td>
+                            <td><em>Rhodotypos scandens</em></td>
+                        </tr>
+                        <tr>
+                            <td>Amur Honeysuckle</td>
+                            <td><em>Lonicera maackii</em></td>
+                        </tr>
+                        <tr>
+                            <td>Bell’s Honeysuckle</td>
+                            <td><em>Lonicera xbella</em></td>
+                        </tr>
+                        <tr>
+                            <td>Morrow’s Honeysuckle</td>
+                            <td><em>Lonicera morrowii</em></td>
+                        </tr>
+                        <tr>
+                            <td>Tatarian Honeysuckle</td>
+                            <td><em>Lonicera tatarica</em></td>
+                        </tr>
+                        <tr>
+                            <td>Common Buckthorn</td>
+                            <td><em>Rhamnus cathartica</em></td>
+                        </tr>
+                        <tr>
+                            <td>Glossy Buckthorn</td>
+                            <td><em>Frangula alnus (Rhamnus frangula)</em></td>
+                        </tr>
+                        <tr>
+                            <td>Japanese Barberry</td>
+                            <td><em>Berberis thunbergii</em></td>
+                        </tr>
+                        <tr>
+                            <td>Multiflora Rose</td>
+                            <td><em>Rosa multiflora</em></td>
+                        </tr>
+                        <tr>
+                            <td>Privet</td>
+                            <td><em>Ligustrum vulgare</em></td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Woody Vines</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Japanese Honeysuckle</td>
+                            <td><em>Lonicera japonica</em></td>
+                        </tr>
+                        <tr>
+                            <td>Kudzu</td>
+                            <td><em>Pueraria lobata</em></td>
+                        </tr>
+                        <tr>
+                            <td>Oriental Bittersweet</td>
+                            <td><em>Celastrus orbiculatus</em></td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Herbaceous Plants</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Baby’s Breath</td>
+                            <td><em>Gypsophila paniculata</em></td>
+                        </tr>
+                        <tr>
+                            <td>Dame’s Rocket</td>
+                            <td><em>Hesperis matronalis</em></td>
+                        </tr>
+                        <tr>
+                            <td>Garlic Mustard</td>
+                            <td><em>Alliaria petiolata</em></td>
+                        </tr>
+                        <tr>
+                            <td>Giant Hogweed</td>
+                            <td><em>Heracleum mantegazzianum</em></td>
+                        </tr>
+                        <tr>
+                            <td>Giant Knotweed</td>
+                            <td><em>Polygonum sachalinense</em></td>
+                        </tr>
+                        <tr>
+                            <td>Japanese Knotweed</td>
+                            <td><em>Polygonum cuspidatum (Fallopia japonica)</em></td>
+                        </tr>
+                        <tr>
+                            <td>Japanese Stilt Grass</td>
+                            <td><em>Microstegium vimineum</em></td>
+                        </tr>
+                        <tr>
+                            <td>Leafy Spurge</td>
+                            <td><em>Euphorbia esula</em></td>
+                        </tr>
+                        <tr>
+                            <td>Lyme-grass</td>
+                            <td><em>Leymus arenarius</em></td>
+                        </tr>
+                        <tr>
+                            <td>Mile-a-minute Weed</td>
+                            <td><em>Polygonum perfoliatum</em></td>
+                        </tr>
+                        <tr>
+                            <td>Narrow-leaved Bitter-cress</td>
+                            <td><em>Cardamine impatiens</em></td>
+                        </tr>
+                        <tr>
+                            <td>Narrow-leaved Cat-tail</td>
+                            <td><em>Typha angustifolia</em></td>
+                        </tr>
+                        <tr>
+                            <td>Purple Loosestrife</td>
+                            <td><em>Lythrum salicaria</em></td>
+                        </tr>
+                        <tr>
+                            <td>Eurasian Phragmites</td>
+                            <td><em>Phragmites australis</em> subsp. <em>australis</em></td>
+                        </tr>
+                        <tr>
+                            <td>Reed Canarygrass</td>
+                            <td><em>Phalaris arundinacea</em></td>
+                        </tr>
+                        <tr>
+                            <td>Spotted Knapweed</td>
+                            <td><em>Centaurea stoebe (Centaurea maculosa)</em></td>
+                        </tr>
+                        <tr>
+                            <td>Black Swallow-worts</td>
+                            <td><em>Cynanchum louiseae (Vincetoxicum nigrum)</em></td>
+                        </tr>
+                        <tr>
+                            <td>Pale Swallow-worts</td>
+                            <td><em>Cynanchum rossicum (Vincetoxicum rossicum)</em></td>
+                        </tr>
+                        <tr>
+                            <td>Canada Thistle</td>
+                            <td><em>Cirsium arvense</em></td>
+                        </tr>
+                        <tr>
+                            <td>European Swamp Thistle</td>
+                            <td><em>Cirsium palustre</em></td>
+                        </tr>
+                        <tr>
+                            <td>Wild Parsnip</td>
+                            <td><em>Pastinaca sativa</em></td>
+                        </tr>
+                        <tr>
+                            <td>White Sweet Clover</td>
+                            <td><em>Melilotus alba</em></td>
+                        </tr>
+                        <tr>
+                            <td>Yellow Sweet Clover</td>
+                            <td><em>Melilotus officinalis</em></td>
+                        </tr>
+                    </table>
+               </div>
+               <h3>Aquatic Plants</h3>
+               <div>
+                    <table>
+                        <tr>
+                            <td>Curly Pondweed</td>
+                            <td><em>Potamogeton crispus</em></td>
+                        </tr>
+                        <tr>
+                            <td>Eurasian Water Milfoil</td>
+                            <td><em>Myriophyllum spicatum</em></td>
+                        </tr>
+                        <tr>
+                            <td>European Frog-bit</td>
+                            <td><em>Hydrocharis morsus-ranae</em></td>
+                        </tr>
+                        <tr>
+                            <td>Flowering Rush</td>
+                            <td><em>Butomus umbellatus</em></td>
+                        </tr>
+                        <tr>
+                            <td>Hydrilla</td>
+                            <td><em>Hydrilla verticillata</em></td>
+                        </tr>
+                        <tr>
+                            <td>Water-hyacinth</td>
+                            <td><em>Eichhornia crassipes</em></td>
+                        </tr>          
+                    </table>
+                </div>
+            </div> <!-- end accordion -->
+        </div> <!-- end contentWrapper -->
+    </div> <!-- end mainWrapper -->
+    <div id="footer">
+        <p>Copyright ©2016 Michigan Invasives</p>
+    </div>
+</body>
+</html>

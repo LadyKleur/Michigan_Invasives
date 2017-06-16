@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Color Pallet */
+/*
+#84a144 - Green boxes
+#c3cd89 - Green hover
+#3f3f3f - Grey background color
+#ffffff - White font
+*/
+
+
+/* SET UP */
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	background-color: #3f3f3f;
+	color: #ffffff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image:url(Assets/background_textured.jpg);
+	background-size: 2200px 1467px;
+	background-position: 0% 410px;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+a {
+	color: #ffffff;	
+	font-size: 15px;
+	text-decoration: none;
+}
+
+p a {
+	color: #ffffff;	
+	text-decoration: underline;
+	font-size: 15px;
+}
+
+a:hover {
+	color: #c3cd89;
+}
+
+.clear {
+	clear: both;	
+}
+
+/* WRAPPERS */
+#topWrapper {
+	width: 100%;	
+	background-color: #3f3f3f;
+	background-image: url(Assets/texture.jpg);
+}
+
+#contentWrapper {
+	height: auto;
+	background-color: #84a144;
+	padding: 30px;
+	margin: 40px 0 40px 0;
+	-webkit-box-shadow: 0px 0px 5px 0px #000;
+	-moz-box-shadow: 0px 0px 5px 0px #000;
+	-o-box-shadow: 0px 0px 5px 0px #000;
+	box-shadow: 0px 0px 5px 0px #000;
+}
+
+#mainWrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	margin-bottom: 90px;
+}
+
+/* NAV BAR */
+#nav {
+	width: 1000px;
+	padding: 45px 0 45px 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	list-style: none;
+	float: right;
+	width: 1000px;
+}
+
+#nav li {
+	padding-left: 45px;
+	float: right;
+}
+
+#nav a {
+	text-decoration: none;	
+}
+
+#nav a:hover {	
+	color: #c3cd89;
+}
+
+#nav img {
+	margin-top: -40px;
+	padding-bottom: 5px;
+}
+
+.current {
+	color: #84a144;
+}
+
+/* BANNER */
+#banner {
+	background-size: cover;
+	height: 370px;
+	background-image: url(Assets/banner_large.jpg);
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 0px 0px 5px 0px #000;
+	-moz-box-shadow: 0px 0px 5px 0px #000;
+	-o-box-shadow: 0px 0px 5px 0px #000;
+	box-shadow: 0px 0px 5px 0px #000;
+}
+
+/* FOOTER */
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 15px 0 15px 0;	
+	background-color: #3f3f3f;
+	background-image: url(Assets/texture.jpg);
+	text-align: center;
+	margin-top: 40px;
+	-webkit-box-shadow: 0px 0px 5px 0px #000;
+	-moz-box-shadow: 0px 0px 5px 0px #000;
+	-o-box-shadow: 0px 0px 5px 0px #000;
+	box-shadow: 0px 0px 5px 0px #000;
+}
+
+
+/*** INDEX.HTML ***/
+/* FEATURE BOX */
+#featureWrapper {
+	height: 332px;
+	margin: 40px 0 40px 0;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 40px;
+	-moz-column-count: 4;
+	-moz-column-gap: 40px;
+	column-count: 4;
+	column-gap: 40px;
+}
+
+.featureTitle {
+	background-color: #84a144;
+	padding: 30px;
+}
+
+.featureTitle a:hover {
+	color: #fff;	
+}
+
+.featureTitle:hover {
+	background-color: #c3cd89;
+}
+
+.featureBox {
+	display: inline-block;
+	width: 220px;
+	height: 332px;				/* DOUBLE CHECK! */ 
+	-webkit-box-shadow: 0px 0px 5px 0px #000;
+	-moz-box-shadow: 0px 0px 5px 0px #000;
+	-o-box-shadow: 0px 0px 5px 0px #000;
+	box-shadow: 0px 0px 5px 0px #000; 
+	
+}
+
+.featureBox img {
+	float: left;
+}
+
+/* HELP BUTTON */
+#helpButton {
+	display: block;
+	padding: 30px;
+	margin: 0;
+	background: linear-gradient(#84a144, #71902D);
+	float: right;
+	-webkit-box-shadow: 0px 0px 5px 0px #000;
+	-moz-box-shadow: 0px 0px 5px 0px #000;
+	-o-box-shadow: 0px 0px 5px 0px #000;
+	box-shadow: 0px 0px 5px 0px #000;
+}
+
+#helpButton a:hover {
+	color: #fff;	
+}
+
+#helpButton:hover {
+	background: linear-gradient(#c3cd89, #D1DC96);
+}
+
+/*** PLANTLIST.HTML ***/
+#tableTitle {
+	padding-left: 35px;	
+}
+
+td {
+	width: 350px;
+}
+
+
+/*** CONTACTUS.HTML ***/
+/* FORM */
+fieldset {
+	border: none;
+}
+
+select {
+	width: 310px;	
+	border: 1px solid #3f3f3f;
+	margin: 10px 0px;
+}
+
+form input, form textarea {
+	border: 1px solid #3f3f3f;
+	padding: 5px;
+	margin: 10px 0px;
+	width: 300px;
+}
+
+form textarea {
+	height: 90px;	
+}
+
+form input[type=radio], form input[type=checkbox] {
+    width: 30px;
+	margin: 10px 0px;
+}
+
+form input[type=submit], form input[type=reset] {
+	width: 155px;
+}
+
+form input:focus, form textarea:focus {
+	background-color: #c3cd89;
+}
+
+#form {
+	float: left;	
+}
+
+/* MAP */
+#contact {
+	float: right;
+	margin-top: 40px;	
+}
+
+iframe {
+	margin: 10px 0px;	
+}
+
+#contact p {
+	line-height: .97;	
+}
+
+/*** MANAGEMENT.HTML ***/
+ul {
+	margin-bottom: 20px;
+}
+
+li {
+	list-style: none;
+	margin-left: 20px;	
+}
+
+/*** LAWS.HTML ***/
+.indent {
+	margin-left: 20px;
+}

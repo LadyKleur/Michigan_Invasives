@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="final.css">
+    <link href="JS/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="JS/jquery-ui.min.css">
+	<script src="JS/external/jquery/jquery.js"></script>
+    <script src="JS/jquery-ui.min.js"></script>
+	<meta charset="utf-8">
+	<title>Michigan Invasives</title>
+    <script>
+      $(function() {
+        $( "#radioset" ).buttonset();
+   		$( "#submit" ).buttonset();
+      });
+    </script>
+</head>
+<body>
+	<div id="topWrapper">
+        <div id="nav">
+        	<ul>       	
+            	<li><a class="current" href="contactUs.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="laws.html">Laws</a></li>
+                <li><a href="management.html">Management</a></li>
+                <li><a href="plantList.html">Plant List</a></li>
+                <li><a href="effects.html">Effects</a></li>
+                <li><a href="index.html">Home</a></li>
+                <a href="index.html"><img src="Assets/logo.png" alt="Michigan Invasives logo" width="200" height="97"></a>
+            </ul>
+        </div> <!-- end nav -->
+        <div class="clear"></div>
+        <div id="banner"></div>
+    </div> <!-- end topWrapper -->
+	<div id="mainWrapper">
+        <div id="contentWrapper">
+        	<div id="form">
+        		<h1>Contact Us</h1>
+                <form method="POST" action="form.php">
+                <fieldset>
+                    <strong>Language:</strong><br>
+                    <select>
+                        <option value="none" selected disabled>-- Select a language --</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Español</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <strong>Name:</strong><br>
+                    <input type="text" name="name" value=""><br>
+                    <strong>Email:</strong><br>
+                    <input type="email" name="email"><br>
+                    <strong>Message:</strong><br>
+                    <textarea name="emailContent"></textarea><br>
+                    <strong>Are you a Michigan resident?</strong><br>
+                    <div id="radioset">
+                        <input type="radio" id="yes" name="resident" checked="checked"><label for="yes">Yes</label>
+                        <input type="radio" id="no" name="resident"><label for="no">No</label>
+                    </div>
+                    <input type="checkbox" name="subscribe" value="" checked>I would like to receive emails from Michigan Invasives<br>
+                    <div id="submit">
+                        <input type="submit" value="Submit">
+                        <input type="reset" name="reset">
+                    </div>
+                </fieldset>
+                </form>
+            </div>
+            <div id="contact">
+            	<strong>Map</strong><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.1198310738496!2d-84.50218868518137!3d42.68000392283002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8822c3b8933cf5e5%3A0x39365effd55ac72a!2sLansing%2C+MI+48909!5e0!3m2!1sen!2sus!4v1456180506095" width="440" height="290" frameborder="0" style="border:0" allowfullscreen></iframe><br>
+                <p>
+                	<strong>Address</strong><br>
+                    Michigan Department of Natural Resources<br>
+					Executive Division<br>
+					P.O. Box 30028<br>
+					Lansing, MI 48909<br>
+                </p>
+            </div>
+        <div class="clear"></div>
+        </div> <!-- end contentWrapper -->
+    </div> <!-- end mainWrapper -->
+    <div id="footer">
+        <p>Copyright ©2016 Michigan Invasives</p>
+    </div>
+</body>
+</html>
